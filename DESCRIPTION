@@ -2,10 +2,12 @@ Package: add2blog
 Type: Package
 Title: blog website add-in
 Version: 0.1.0
-Author: Jiaxiang Li
+Authors@R: person("Jiaxiang", "", "Li", role = c("aut", "cre"), email = "alex.lijiaxiang@foxmail.com")
 Maintainer: Jiaxiang Li <alex.lijiaxiang@foxmail.com>
 Description: add2blog is R package to create some materials for a blog website.
-License: What license is it under?
+License: MIT + file LICENSE
+URL: https://github.com/JiaxiangBU/add2blog
+BugReports: https://github.com/JiaxiangBU/add2blog/issues
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
