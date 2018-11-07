@@ -3,7 +3,7 @@ graph_fun <- function(matrix){
         as.data.frame %>%
         rownames_to_column('y') %>%
         gather(x,text,-y) %>%
-        mutate(x = str_remove_all(x,'V')
+        mutate(x = str_remove_all(x,'V') %>%
         mutate_at(vars(x,y),as.integer) %>%
         ggplot(aes(x=x, y=y, color=factor(text))) +
         geom_text(aes(label=text, color=factor(text)), family="Helvetica", size=2.5) +
