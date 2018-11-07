@@ -1,4 +1,4 @@
-# add2blog
+# `add2blog`
 
 `add2blog` is R package to create some materials for a blog website.
 
@@ -29,7 +29,7 @@ add2blog::graph_fun(matrix_me,fontsize=3)
 
 ![](https://github.com/JiaxiangBU/picbackup/blob/master/add2blog_sample_wallpaper.png?raw=true)
 
-# Reference {-}
+# Reference
 
 Swanson, Ana. 2015. “10 Stunning Images Show the Beauty Hidden in Pi.” 2015. https://www.washingtonpost.com/news/wonk/wp/2015/03/14/10-stunning-images-show-the-beauty-hidden-in-pi/?noredirect=on&utm_term=.614dbc50c9aa.
 
