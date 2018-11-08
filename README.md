@@ -7,8 +7,8 @@ status](https://travis-ci.org/JiaxiangBU/add2blog.svg?branch=master)](https://tr
 
 # add2blog
 
-The goal of add2blog is to … help you build some materials like wall
-paper for your blog website \!
+The goal of add2blog is to help you build some materials like wall paper
+for your blog website \!
 
 ## Installation
 
