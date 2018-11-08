@@ -1,47 +1,28 @@
-# `add2blog`
 
-  [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Travis build
+status](https://travis-ci.org/JiaxiangBU/add2blog.svg?branch=master)](https://travis-ci.org/JiaxiangBU/add2blog)
 
-`add2blog` is R package to create some materials for a blog website.
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-Friendly install `add2blog` by 
+# add2blog
 
-```
+The goal of add2blog is to … help you build some materials like wall
+paper for your blog website \!
+
+## Installation
+
+You can install the released version of add2blog from
+[Github](https://github.com/JiaxiangBU/add2blog) with:
+
+``` r
 devtools::install_github('JiaxiangBU/add2blog')
 ```
 
-After successfully installation of `add2blog`, just library it!
-
-```
+``` r
 library(add2blog)
 ```
 
-## Build a wallpaper from your name
+## Example
 
-Inspired by Swanson (2015) and Chisato (2018), I create functions `matrix_name` and `graph_fun`.
-
-```
-library(tidyverse)
-library(data.table)
-library(add2blog)
-matrix_me <- 
-    add2blog::matrix_name('jiaxiangli',n = 10)
-add2blog::graph_fun(matrix_me,fontsize=3)
-```
-
-![](https://github.com/JiaxiangBU/picbackup/blob/master/add2blog_sample_wallpaper.png?raw=true)
-
-# Reference
-
-Swanson, Ana. 2015. “10 Stunning Images Show the Beauty Hidden in Pi.” 2015. https://www.washingtonpost.com/news/wonk/wp/2015/03/14/10-stunning-images-show-the-beauty-hidden-in-pi/?noredirect=on&utm_term=.614dbc50c9aa.
-
-Chisato. 2018. “VISUAL Art with Pi Using Ggplot2 & Circlize.” 2018. https://chichacha.netlify.com/2018/10/13/visual-art-with-pi-using-ggplot2-circlize/.
-
-
-
-
-
-
-
-
-
+See the vignettes.
