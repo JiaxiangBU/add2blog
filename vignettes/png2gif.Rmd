@@ -21,9 +21,16 @@ However, post a lot of pictures is not friendly-readable even you can use html t
 Thus, gif may be a better solution. 
 I wrap a function to convert screenshots or other pictures into a gif.
 
-```{r}
+```{r eval=F}
 library(add2blog)
-add2blog::
+library(stringr)
+library(data.table)
+library(tidyverse)
+png2gif(
+  path = file.path('../','inst')
+  ,input_like = 'reprex'
+  ,output_name = 'reprex201811061210.gif'
+)
 ```
 
 1. `path` is the directory the pictures stay and `input_like` is a regular expression string to select all matches in this directory. 
@@ -32,11 +39,7 @@ add2blog::
 1. `size` controls the size of gif, by default, `1000 x 1000`
 1. `transfer_time` specifies how long the picture changes into the next, by default, `1`
 
-```{r}
-
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics('https://raw.githubusercontent.com/JiaxiangBU/picbackup/master/reprex201811061210.gif')
 ```
 
-
-path <- file.path('../','picbackup')
-input_like <- 'reprex'
-output_name <- 'reprex201811061210.gif'

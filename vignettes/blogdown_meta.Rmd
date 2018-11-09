@@ -20,19 +20,20 @@ When you post a lot for your blog site built by `blogdown`, you may want to merg
 The function `blogdown_meta` go deeper in the `yaml` contents of each `.Rmd` and build a friendly readable `data.frame` to analyze.
 This function is inspired by function `count_yaml` in the package `blogdown`.
 
-```{r}
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
 library(data.table)
-blogdown_meta_data <- fread('D:/weDo/blog_180802/blogdown_meta_data.csv',encoding = 'UTF-8')
-use_data(blogdown_meta_data,overwrite = T)
+library(add2blog)
 ```
 
 ```{r eval=F}
-library(add2blog)
 blogdown_meta(dir = '.')
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-data(blogdown_meta_data)
-blogdown_meta_data
+# data(blogdown_meta_data,internal = F)
+load(file.path('..','data','blogdown_meta_data.rda'))
+blogdown_meta_data %>% 
+  rmarkdown::paged_table()
 ```
 
