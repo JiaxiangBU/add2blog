@@ -78,15 +78,9 @@
     element.setAttribute('data-original-title', tooltipOriginalTitle);
   }
 
-<<<<<<< HEAD
   if(ClipboardJS.isSupported()) {
     $(document).ready(function() {
       var copyButton = "<button type='button' class='btn btn-primary btn-copy-ex' type = 'submit' title='Copy to clipboard' aria-label='Copy to clipboard' data-toggle='tooltip' data-placement='left auto' data-trigger='hover' data-clipboard-copy><i class='fa fa-copy'></i></button>";
-=======
-  if(Clipboard.isSupported()) {
-    $(document).ready(function() {
-      var copyButton = "<button type='button' class='btn btn-primary btn-copy-ex' type = 'submit' title='Copy to clipboard' aria-hidden='true' data-toggle='tooltip' data-placement='left auto' data-trigger='hover' data-clipboard-copy><i class='fa fa-copy' aria-hidden='true'></i></button>";
->>>>>>> 217493f2e29ae66d60fcc73fadfef02f72b51900
 
       $(".examples, div.sourceCode").addClass("hasCopyButton");
 
@@ -97,11 +91,7 @@
       $('.btn-copy-ex').tooltip({container: 'body'});
 
       // Initialize clipboard:
-<<<<<<< HEAD
       var clipboardBtnCopies = new ClipboardJS('[data-clipboard-copy]', {
-=======
-      var clipboardBtnCopies = new Clipboard('[data-clipboard-copy]', {
->>>>>>> 217493f2e29ae66d60fcc73fadfef02f72b51900
         text: function(trigger) {
           return trigger.parentNode.textContent;
         }
