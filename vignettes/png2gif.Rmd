@@ -22,7 +22,8 @@ Thus, gif may be a better solution.
 I wrap a function to convert screenshots or other pictures into a gif.
 
 ```{r}
-
+library(add2blog)
+add2blog::
 ```
 
 1. `path` is the directory the pictures stay and `input_like` is a regular expression string to select all matches in this directory. 

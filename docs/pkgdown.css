@@ -136,9 +136,16 @@ a.anchor {
 .ref-index th {font-weight: normal;}
 
 .ref-index td {vertical-align: top;}
+<<<<<<< HEAD
 .ref-index .icon {width: 40px;}
 .ref-index .alias {width: 40%;}
 .ref-index-icons .alias {width: calc(40% - 40px);}
+=======
+.ref-index .alias {width: 40%;}
+.ref-index .title {width: 60%;}
+
+.ref-index .alias {width: 40%;}
+>>>>>>> ad6741854306be86525abb3a50d879b7aa8b5bd5
 .ref-index .title {width: 60%;}
 
 .ref-arguments th {text-align: right; padding-right: 10px;}
