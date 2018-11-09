@@ -1,0 +1,38 @@
+---
+title: "Get Metadata from all your blogs built by blogdown"
+author: "Jiaxiang Li"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+When you post a lot for your blog site built by `blogdown`, you may want to merge, edit metadata of some of them.
+The function `blogdown_meta` go deeper in the `yaml` contents of each `.Rmd` and build a friendly readable `data.frame` to analyze.
+This function is inspired by function `count_yaml` in the package `blogdown`.
+
+```{r}
+library(data.table)
+blogdown_meta_data <- fread('D:/weDo/blog_180802/blogdown_meta_data.csv',encoding = 'UTF-8')
+use_data(blogdown_meta_data,overwrite = T)
+```
+
+```{r eval=F}
+library(add2blog)
+blogdown_meta(dir = '.')
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+data(blogdown_meta_data)
+blogdown_meta_data
+```
+
