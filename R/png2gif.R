@@ -4,6 +4,8 @@ png2gif <- function(path='.',input_like='.png',output_name='tmp.gif',size="1000x
     path %>%
         list.files(full.names = T) %>%
         str_subset(input_like) %>%
+        str_subset('.gif$') %>%
+        # avoid git
         data.table(x=.) %>%
         mutate(x = map(x,image_read)) %>%
         mutate(x = map(x,~image_scale(.,size))) %>%
