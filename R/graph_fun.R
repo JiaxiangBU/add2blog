@@ -1,3 +1,20 @@
+#' Build a wallpaper from your name
+#'
+#' Input a matrix and build a wallpaper.
+#' This is a input for function `graph_fun` to create a wallpaper.
+#'
+#' @param matrix input
+#' @param fontsize font size
+#'
+#' @return ggplot
+#' @export
+#' @examples
+#' matrix_me <-
+#'   add2blog::matrix_name('jiaxiangli',n = 10)
+#' add2blog::graph_fun(matrix_me,fontsize=3)
+
+
+
 graph_fun <- function(matrix,fontsize=2.5){
   matrix %>%
     as.data.frame %>%

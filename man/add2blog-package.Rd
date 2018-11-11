@@ -6,7 +6,8 @@
 \alias{add2blog-package}
 \title{add2blog: blog website add-in}
 \description{
-add2blog is R package to create some materials for a blog website.
+add2blog is R package to create some materials for a blog website, 
+    such as wallpaper, badge, gif, checkbox and metadata table.
 }
 \seealso{
 Useful links:

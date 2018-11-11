@@ -1,3 +1,7 @@
+# add2blog 0.1.2
+
+* Added help document for functions `matrix_name` and `graph_fun`.
+
 # add2blog 0.1.1
 
 * Added a vignette *Get Metadata from all your blogs built by blogdown*.

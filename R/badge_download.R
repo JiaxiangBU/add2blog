@@ -1,3 +1,20 @@
+#' Get a badge for the download count of your package
+#'
+#' Input your github name and repo name,
+#' this function will feedback the download count of your package.
+#'
+#' @param your_github_name character
+#' @param your_github_repo character
+#' @param type character copy it.
+#'
+#' @return character
+#' @export
+#' @examples
+#' add2blog::badge_download(
+#' your_github_name = 'JiaxiangBU'
+#' ,your_github_repo = 'add2prep'
+#' ,type = 'total')
+
 badge_download <- function(
     your_github_name = 'JiaxiangBU'
     ,your_github_repo = 'add2prep'
