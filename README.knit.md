@@ -8,14 +8,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
+
 
 # add2blog
 
@@ -26,11 +19,13 @@ help you build some materials like wall paper for your blog website !
 
 You can install the released version of add2blog from [Github](https://github.com/JiaxiangBU/add2blog) with:
 
-```{r eval=F}
+
+```r
 devtools::install_github('JiaxiangBU/add2blog')
 ```
 
-```{r eval=F}
+
+```r
 library(add2blog)
 ```
 
@@ -40,7 +35,8 @@ See the vignettes.
 
 For example,
 
-```{r eval=F}
+
+```r
 add2blog::badge_download(
   your_github_name = 'JiaxiangBU'
     ,your_github_repo = 'add2prep'

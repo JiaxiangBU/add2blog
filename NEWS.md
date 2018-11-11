@@ -8,6 +8,8 @@
 
 * Added a function `png2gif`.
 
+* Added a function `badge_download`.
+
 # add2blog 0.1.0
 
 * Added a `NEWS.md` file to track changes to the package.
