@@ -37,3 +37,15 @@ library(add2blog)
 ## Example
 
 See the vignettes.
+
+For example,
+
+```{r}
+add2blog::badge_download(
+  your_github_name = 'JiaxiangBU'
+    ,your_github_repo = 'add2prep'
+    ,type = 'total'
+)
+```
+
+  [![GitHub All Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
