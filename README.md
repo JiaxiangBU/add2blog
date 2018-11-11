@@ -2,6 +2,8 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Travis build
 status](https://travis-ci.org/JiaxiangBU/add2blog.svg?branch=master)](https://travis-ci.org/JiaxiangBU/add2blog)
+[![GitHub All
+Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
