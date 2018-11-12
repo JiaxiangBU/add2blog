@@ -7,18 +7,20 @@
 matrix_name(x, n = 10)
 }
 \arguments{
-\item{x}{character your name}
+\item{x}{Character. Your name}
 
-\item{n}{size n by n}
+\item{n}{Integer. Size n by n.}
 }
 \value{
-martix n by n
+Martix. n by n.
 }
 \description{
-Capitalize each letter of your name and randomly put in a matrix.
-This is a input for function `graph_fun` to create a wallpaper.
+Capitalize each letter of your name and randomly put in a matrix. This is a input for function `graph_fun` to create a wallpaper.
 }
 \examples{
 matrix_me <-
   add2blog::matrix_name('jiaxiangli',n = 10)
+}
+\author{
+Jiaxiang Li
 }

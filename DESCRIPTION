@@ -20,4 +20,7 @@ Suggests:
 VignetteBuilder: knitr
 Language: en-US
 Imports: tidyverse,
-    glue
+    glue,
+    magick,
+    blogdown,
+    data.table
