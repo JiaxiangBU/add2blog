@@ -8,6 +8,7 @@
 #' @param type character copy it.
 #'
 #' @return character
+#' @import glue
 #' @export
 #' @examples
 #' add2blog::badge_download(

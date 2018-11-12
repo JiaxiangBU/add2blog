@@ -11,10 +11,10 @@
 #' @return data.frame
 #' @author Jiaxiang Li
 #'
-#' @import tidyverse
-#' @import blogdown
+#' @import dplyr
+#' @import stringr
 #' @import data.table
-#'
+#' @import blogdown
 #' @export
 #'
 #' @examples
@@ -30,7 +30,7 @@ blogdown_meta <- function(dir = '.'){
         gather(key,value,-dir) %>%
         # mutate(type = map(value,typeof)) %>%
         # unnest(type) %>%
-        filter(map(value,typeof) == 'character') %>%
+        dplyr::filter(map(value,typeof) == 'character') %>%
         # remove null
         unnest(value) %>%
         group_by(dir,key) %>%

@@ -23,4 +23,10 @@ Imports: tidyverse,
     glue,
     magick,
     blogdown,
-    data.table
+    data.table,
+    tibble,
+    dplyr,
+    ggplot2,
+    stringr,
+    tidyr
+Depends: R (>= 2.10)

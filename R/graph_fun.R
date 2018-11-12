@@ -5,7 +5,8 @@
 #'
 #' @param matrix input
 #' @param fontsize font size
-#'
+#' @import tidyr
+#' @import ggplot2
 #' @return ggplot
 #' @export
 #' @examples
