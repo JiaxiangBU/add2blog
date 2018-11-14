@@ -43,5 +43,6 @@ Imports: tidyverse,
     stringr,
     tidyr,
     xfun,
-    here
+    here,
+    lubridate
 Depends: R (>= 2.10)
