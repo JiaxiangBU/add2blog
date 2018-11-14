@@ -19,5 +19,20 @@ Useful links:
 \author{
 \strong{Maintainer}: Jiaxiang Li \email{alex.lijiaxiang@foxmail.com}
 
+Other contributors:
+\itemize{
+  \item Yihui Xie [contributor]
+  \item Beilei Bian [contributor]
+  \item Forest Fang [contributor]
+  \item Garrick Aden-Buie [contributor]
+  \item Hiroaki Yutani [contributor]
+  \item Ian Lyttle [contributor]
+  \item JJ Allaire [contributor]
+  \item Kevin Ushey [contributor]
+  \item Leonardo Collado-Torres [contributor]
+  \item Xianying Tan [contributor]
+  \item  RStudio Inc [copyright holder]
+}
+
 }
 \keyword{internal}

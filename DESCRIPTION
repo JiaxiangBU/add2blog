@@ -14,7 +14,7 @@ Authors@R: c(
     person("Kevin", "Ushey", role = "ctb"),
     person("Leonardo", "Collado-Torres", role = "ctb"),
     person("Xianying", "Tan", role = "ctb"),
-    person(family = "RStudio Inc", role = "cph"),
+    person(family = "RStudio Inc", role = "cph")
     )
 Maintainer: Jiaxiang Li <alex.lijiaxiang@foxmail.com>
 Description: add2blog is R package to create some materials for a blog website, 
@@ -41,5 +41,7 @@ Imports: tidyverse,
     dplyr,
     ggplot2,
     stringr,
-    tidyr
+    tidyr,
+    xfun,
+    here
 Depends: R (>= 2.10)

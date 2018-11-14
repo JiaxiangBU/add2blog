@@ -24,10 +24,11 @@ This function is inspired by function `count_yaml` in the package `blogdown`.
 library(tidyverse)
 library(data.table)
 library(add2blog)
+library(here)
 ```
 
 ```{r eval=F}
-blogdown_meta(dir = '.')
+blogdown_meta(dir = "/Users/vija/Downloads/180805_folder_01/tmp_jli/blog_180802/content/post")
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
