@@ -34,11 +34,12 @@ devtools::install_github('JiaxiangBU/add2blog')
 library(add2blog)
 ```
 
-## Example
+## Usage
 
-See the vignettes.
+```{r}
+pn()
+```
 
-For example,
 
 ```{r eval=F}
 add2blog::badge_download(
@@ -49,3 +50,8 @@ add2blog::badge_download(
 ```
 
   [![GitHub All Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
+
+
+## Example
+
+See the [vignettes](https://jiaxiangbu.github.io/add2blog/articles/).

@@ -38,3 +38,4 @@ blogdown_meta <- function(dir = '.'){
         summarise(content = str_flatten(value,collapse = ',')) %>%
         spread(key,content)
 }
+
