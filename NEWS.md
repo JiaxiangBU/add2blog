@@ -1,3 +1,9 @@
+# add2blog 0.1.3
+
+* Updated auther list.
+
+* Rewritten a similar function of `count_yaml` from this [idea](https://community.rstudio.com/t/build-a-package-import-a-non-exported-function-from-a-imported-package/18062/2?u=econkid).
+
 # add2blog 0.1.2
 
 * Added help document for functions `matrix_name` and `graph_fun`.

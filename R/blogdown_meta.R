@@ -22,8 +22,9 @@
 
 blogdown_meta <- function(dir = '.'){
     files <- list.files(dir, "[.][Rr]?(md|markdown)$", recursive = TRUE, full.names = TRUE)
-    blogdown:::scan_yaml(dir) %>%
+        blogdown:::scan_yaml(dir) %>%
         # idea from blogdown count_yaml
+        # So I update the author
         transpose() %>%
         as.data.table() %>%
         mutate(dir = files) %>%

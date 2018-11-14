@@ -1,8 +1,21 @@
 Package: add2blog
 Type: Package
 Title: blog website add-in
-Version: 0.1.0
-Authors@R: person("Jiaxiang", "", "Li", role = c("aut", "cre"), email = "alex.lijiaxiang@foxmail.com")
+Version: 0.1.3
+Authors@R: c(
+    person("Jiaxiang", "", "Li", role = c("aut", "cre"), email = "alex.lijiaxiang@foxmail.com"),
+    person("Yihui", "Xie", role = "ctb"),
+    person("Beilei", "Bian", role = "ctb"),
+    person("Forest", "Fang", role = "ctb"),
+    person("Garrick", "Aden-Buie", role = "ctb"),
+    person("Hiroaki", "Yutani", role = "ctb"),
+    person("Ian", "Lyttle", role = "ctb"),
+    person("JJ", "Allaire", role = "ctb"),
+    person("Kevin", "Ushey", role = "ctb"),
+    person("Leonardo", "Collado-Torres", role = "ctb"),
+    person("Xianying", "Tan", role = "ctb"),
+    person(family = "RStudio Inc", role = "cph"),
+    )
 Maintainer: Jiaxiang Li <alex.lijiaxiang@foxmail.com>
 Description: add2blog is R package to create some materials for a blog website, 
     such as wallpaper, badge, gif, checkbox and metadata table.
