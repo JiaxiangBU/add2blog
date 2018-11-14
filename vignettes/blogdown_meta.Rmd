@@ -28,7 +28,7 @@ library(here)
 ```
 
 ```{r eval=F}
-blogdown_meta(dir = "/Users/vija/Downloads/180805_folder_01/tmp_jli/blog_180802/content/post")
+(dir = "/Users/vija/Downloads/180805_folder_01/tmp_jli/blog_180802/content/post")
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
