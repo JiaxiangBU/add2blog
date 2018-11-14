@@ -37,12 +37,16 @@ library(add2blog)
 ## Usage
 
 ```{r}
-pn()
+library(add2blog)
+library(tidyverse)
 ```
 
+```{r}
+add2blog::pn()
+```
 
 ```{r eval=F}
-add2blog::badge_download(
+badge_download(
   your_github_name = 'JiaxiangBU'
     ,your_github_repo = 'add2prep'
     ,type = 'total'
@@ -50,7 +54,6 @@ add2blog::badge_download(
 ```
 
   [![GitHub All Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
-
 
 ## Example
 

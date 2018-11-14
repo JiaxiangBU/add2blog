@@ -1,3 +1,7 @@
+# add2blog 0.1.4
+
+* Added easy paste method for functions `pn` and `badge_download`.
+
 # add2blog 0.1.3
 
 * Updated auther list.
