@@ -1,9 +1,0 @@
-pandoc: 2.3.1
-pkgdown: 1.1.0.9000
-pkgdown_sha: 012d46f513daf68d24bfee7e3a1622137aa62228
-articles:
-  blogdown_meta: blogdown_meta.html
-  checkbox: checkbox.html
-  png2gif: png2gif.html
-  wallpaper: wallpaper.html
-
