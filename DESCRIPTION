@@ -1,12 +1,26 @@
 Package: add2blog
 Type: Package
 Title: blog website add-in
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: person("Jiaxiang", "", "Li", role = c("aut", "cre"), email = "alex.lijiaxiang@foxmail.com")
 Maintainer: Jiaxiang Li <alex.lijiaxiang@foxmail.com>
 Description: add2blog is R package to create some materials for a blog website, 
     such as wallpaper, badge, gif, checkbox and metadata table.
 License: MIT + file LICENSE
+URL: https://github.com/JiaxiangBU/add2blog
+BugReports: https://github.com/JiaxiangBU/add2blog/issues
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Imports:
+    stringr,
+    data.table,
+    purrr,
+    magick,
+    dplyr,
+    tibble,
+    glue,
+    ggplot2,
+    imager,
+    graphics,
+    magrittr

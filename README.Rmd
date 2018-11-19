@@ -2,6 +2,10 @@
 output: github_document
 ---
 
+  [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+  [![Travis build status](https://travis-ci.org/JiaxiangBU/add2blog.svg?branch=master)](https://travis-ci.org/JiaxiangBU/add2blog)
+  [![GitHub All Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r setup, include = FALSE}
@@ -12,38 +16,65 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+
 # add2blog
 
-The goal of add2blog is to ...
+The goal of add2blog is to
+help you build some materials like wall paper for your blog website !
+
 
 ## Installation
 
-You can install the released version of add2blog from [CRAN](https://CRAN.R-project.org) with:
+You can install the released version of add2blog from [Github](https://github.com/JiaxiangBU/add2blog) with:
 
-``` r
-install.packages("add2blog")
+```{r eval=F}
+devtools::install_github('JiaxiangBU/add2blog')
 ```
+
+```{r eval=F}
+library(add2blog)
+```
+
+## Usage
+
+```{r}
+library(tidyverse)
+```
+
+### png2gif
+
+```{r eval=F}
+png2gif(
+path = file.path('../','inst')
+,input_like = 'reprex'
+,output_name = 'reprex201811061210.gif'
+)
+```
+
+### digit_plot
+
+1. Extract the position and corresponding grey degree.
+1. The users give some digits which have corresponding grey degree.
+1. Put the digits (at the similar level of grey degree) into the position.
+
+```{r eval=F}
+digit_plot(
+    digit_raw='lijiaxiang'
+    ,img_path=here::here('inst','pic','lijiaxiang.png')
+    ,resize = 0.15
+    ,bin = 0.4
+    ,digit_size = 4
+    ,alpha = 0.8
+)
+ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
+```
+
+```{r}
+knitr::include_graphics(here::here('inst','pic','lijiaxiang_digit.png'))
+```
+
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+See the [vignettes](https://jiaxiangbu.github.io/add2blog/articles/).
 
-```{r example}
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
