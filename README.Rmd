@@ -70,10 +70,9 @@ digit_plot(
 # ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
 ```
 
-```{r}
-# knitr::include_graphics(here::here('inst','pic','lijiaxiang_digit.png'))
+```{r echo=FALSE}
+knitr::include_graphics('https://github.com/JiaxiangBU/add2blog/raw/master/inst/pic/lijiaxiang_digit.png')
 ```
-
 
 ## Example
 
