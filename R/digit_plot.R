@@ -22,10 +22,10 @@
 #' @import glue
 #' @import tibble
 #' @import magrittr
+#' @importFrom magrittr %>%
 #'
 #' @export
 
-library(magrittr)
 digit_plot <-
     function(
         digit_raw='lijiaxiang'

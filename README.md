@@ -59,6 +59,7 @@ path = file.path('../','inst')
 <!-- end list -->
 
 ``` r
+library(add2blog)
 digit_plot(
     digit_raw='lijiaxiang'
     ,img_path=here::here('inst','pic','lijiaxiang.png')
@@ -67,14 +68,12 @@ digit_plot(
     ,digit_size = 4
     ,alpha = 0.8
 )
-ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
+# ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
 ```
 
 ``` r
-knitr::include_graphics(here::here('inst','pic','lijiaxiang_digit.png'))
+# knitr::include_graphics(here::here('inst','pic','lijiaxiang_digit.png'))
 ```
-
-<img src="/Users/vija/Downloads/180805_folder_01/tmp_jli/trans/projIN/add2blog/inst/pic/lijiaxiang_digit.png" width="100%" />
 
 ## Example
 

@@ -22,7 +22,7 @@ png2gif(path = ".", input_like = ".png", output_name = "tmp.gif",
 gif
 }
 \description{
-convert screenshots or other pictures into a gif.
+Convert screenshots or other pictures into a gif.
 }
 \examples{
 png2gif(

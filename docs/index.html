@@ -87,29 +87,44 @@
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(add2blog)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; Warning: replacing previous import 'data.table::first' by 'dplyr::first'</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; when loading 'add2blog'</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt; Warning: replacing previous import 'data.table::between' by</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; 'dplyr::between' when loading 'add2blog'</span></a>
-<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; Warning: replacing previous import 'data.table::last' by 'dplyr::last' when</span></a>
-<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; loading 'add2blog'</span></a>
-<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; Warning: replacing previous import 'dplyr::collapse' by 'glue::collapse'</span></a>
-<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; when loading 'add2blog'</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt; ─ Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ─</span></a>
-<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="co">#&gt; ✔ ggplot2 3.1.0     ✔ purrr   0.2.5</span></a>
-<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt; ✔ tibble  1.4.2     ✔ dplyr   0.7.8</span></a>
-<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt; ✔ tidyr   0.8.2     ✔ stringr 1.3.1</span></a>
-<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; ✔ readr   1.1.1     ✔ forcats 0.3.0</span></a>
-<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="co">#&gt; ─ Conflicts ──────────────────────────────────────── tidyverse_conflicts() ─</span></a>
-<a class="sourceLine" id="cb3-17" data-line-number="17"><span class="co">#&gt; ✖ dplyr::filter() masks stats::filter()</span></a>
-<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="co">#&gt; ✖ dplyr::lag()    masks stats::lag()</span></a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt; ─ Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ─</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; ✔ ggplot2 3.1.0     ✔ purrr   0.2.5</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co">#&gt; ✔ tibble  1.4.2     ✔ dplyr   0.7.8</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co">#&gt; ✔ tidyr   0.8.2     ✔ stringr 1.3.1</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="co">#&gt; ✔ readr   1.1.1     ✔ forcats 0.3.0</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; ─ Conflicts ──────────────────────────────────────── tidyverse_conflicts() ─</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; ✖ dplyr::filter() masks stats::filter()</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; ✖ dplyr::lag()    masks stats::lag()</span></a></code></pre></div>
+<div id="png2gif" class="section level3">
+<h3 class="hasAnchor">
+<a href="#png2gif" class="anchor"></a>png2gif</h3>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="reference/png2gif.html">png2gif</a></span>(</a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="dt">path =</span> <span class="kw">file.path</span>(<span class="st">'../'</span>,<span class="st">'inst'</span>)</a>
 <a class="sourceLine" id="cb4-3" data-line-number="3">,<span class="dt">input_like =</span> <span class="st">'reprex'</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4">,<span class="dt">output_name =</span> <span class="st">'reprex201811061210.gif'</span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5">)</a></code></pre></div>
+</div>
+<div id="digit_plot" class="section level3">
+<h3 class="hasAnchor">
+<a href="#digit_plot" class="anchor"></a>digit_plot</h3>
+<ol style="list-style-type: decimal">
+<li>Extract the position and corresponding grey degree.</li>
+<li>The users give some digits which have corresponding grey degree.</li>
+<li>Put the digits (at the similar level of grey degree) into the position.</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">digit_plot</span>(</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">    <span class="dt">digit_raw=</span><span class="st">'lijiaxiang'</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3">    ,<span class="dt">img_path=</span>here<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/here/topics/here">here</a></span>(<span class="st">'inst'</span>,<span class="st">'pic'</span>,<span class="st">'lijiaxiang.png'</span>)</a>
+<a class="sourceLine" id="cb5-4" data-line-number="4">    ,<span class="dt">resize =</span> <span class="fl">0.15</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5">    ,<span class="dt">bin =</span> <span class="fl">0.4</span></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6">    ,<span class="dt">digit_size =</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7">    ,<span class="dt">alpha =</span> <span class="fl">0.8</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8">)</a>
+<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="kw">ggsave</span>(here<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/here/topics/here">here</a></span>(<span class="st">'inst'</span>,<span class="st">'pic'</span>,<span class="st">'lijiaxiang_digit.png'</span>))</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">knitr<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/knitr/topics/include_graphics">include_graphics</a></span>(here<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/here/topics/here">here</a></span>(<span class="st">'inst'</span>,<span class="st">'pic'</span>,<span class="st">'lijiaxiang_digit.png'</span>))</a></code></pre></div>
+<p><img src="inst/pic/lijiaxiang_digit.png" width="100%"></p>
+</div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
