@@ -1,6 +1,6 @@
 #' Convert pictures to gif
 #'
-#' convert screenshots or other pictures into a gif.
+#' Convert screenshots or other pictures into a gif.
 #'
 #' @param path Character. The directory contains the pictures to convert.
 #' @param input_like Character. The file names of the pictures like
@@ -11,8 +11,11 @@
 #' @return gif
 #' @author Jiaxiang Li
 #'
-#' @import tidyverse
+#' @import stringr
+#' @import data.table
+#' @import purrr
 #' @import magick
+#' @import dplyr
 #'
 #' @export
 #'
@@ -28,17 +31,17 @@ png2gif <- function(path='.',input_like='.png',output_name='tmp.gif',size="1000x
                     ,transfer_time = 1){
     path %>%
         list.files(full.names = T) %>%
-        str_subset(input_like) %>%
-        str_subset('.gif$') %>%
+        stringr::str_subset(input_like) %>%
+        stringr::str_subset('.gif$') %>%
         # avoid git
-        data.table(x=.) %>%
-        mutate(x = map(x,image_read)) %>%
-        mutate(x = map(x,~image_scale(.,size))) %>%
+        data.table::data.table(x=.) %>%
+        dplyr::mutate(x = purrr::map(x,magick::image_read)) %>%
+        dplyr::mutate(x = purrr::map(x,~magick::image_scale(.,size))) %>%
         # resize to fit better
         .$x %>%
-        image_join %>%
-        image_animate(fps=transfer_time) %>%
-        image_write(
+        magick::image_join %>%
+        magick::image_animate(fps=transfer_time) %>%
+        magick::image_write(
             file.path(
                 path
                 ,output_name

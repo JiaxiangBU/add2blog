@@ -4,7 +4,13 @@ print.banner.on.startup: auto
 vcs.ignore.lib: TRUE
 vcs.ignore.src: FALSE
 external.packages: 
+<<<<<<< HEAD
 local.repos: D:/software/R-3.5.1/library
+||||||| merged common ancestors
+local.repos: 
+=======
+local.repos: /Library/Frameworks/R.framework/Versions/3.5/Resources/library
+>>>>>>> 549edf79bf9e68b864f3dab0b4836ceb35e6de7d
 load.external.packages.on.startup: TRUE
 ignored.packages: 
 ignored.directories:

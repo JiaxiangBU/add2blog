@@ -25,19 +25,54 @@ devtools::install_github('JiaxiangBU/add2blog')
 library(add2blog)
 ```
 
-## Example
-
-See the vignettes.
-
-For example,
+## Usage
 
 ``` r
-add2blog::badge_download(
-  your_github_name = 'JiaxiangBU'
-    ,your_github_repo = 'add2prep'
-    ,type = 'total'
+library(tidyverse)
+#> ─ Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ─
+#> ✔ ggplot2 3.1.0     ✔ purrr   0.2.5
+#> ✔ tibble  1.4.2     ✔ dplyr   0.7.8
+#> ✔ tidyr   0.8.2     ✔ stringr 1.3.1
+#> ✔ readr   1.1.1     ✔ forcats 0.3.0
+#> ─ Conflicts ──────────────────────────────────────── tidyverse_conflicts() ─
+#> ✖ dplyr::filter() masks stats::filter()
+#> ✖ dplyr::lag()    masks stats::lag()
+```
+
+### png2gif
+
+``` r
+png2gif(
+path = file.path('../','inst')
+,input_like = 'reprex'
+,output_name = 'reprex201811061210.gif'
 )
 ```
 
-[![GitHub All
-Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
+### digit\_plot
+
+1.  Extract the position and corresponding grey degree.
+2.  The users give some digits which have corresponding grey degree.
+3.  Put the digits (at the similar level of grey degree) into the
+    position.
+
+<!-- end list -->
+
+``` r
+library(add2blog)
+digit_plot(
+    digit_raw='lijiaxiang'
+    ,img_path=here::here('inst','pic','lijiaxiang.png')
+    ,resize = 0.15
+    ,bin = 0.4
+    ,digit_size = 4
+    ,alpha = 0.8
+)
+# ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
+```
+
+<img src="https://github.com/JiaxiangBU/add2blog/raw/master/inst/pic/lijiaxiang_digit.png" width="100%" />
+
+## Example
+
+See the [vignettes](https://jiaxiangbu.github.io/add2blog/articles/).

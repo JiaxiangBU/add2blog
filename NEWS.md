@@ -1,3 +1,21 @@
+# add2blog 0.1.7
+
+* Added the function `digit_plot` for building a digit plot.
+
+# add2blog 0.1.6
+
+* Recover the `README.Rmd`.
+* Recover the `DESCRIPTION`.
+* Recover the function `png2gif`.
+
+# add2blog 0.1.5
+
+* Recover the `packrat` files and rebuild all functions.
+
+# add2blog 0.1.4
+
+* Added easy paste method for functions `pn` and `badge_download`.
+
 # add2blog 0.1.3
 
 * Updated auther list.

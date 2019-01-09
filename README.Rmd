@@ -22,6 +22,7 @@ knitr::opts_chunk$set(
 The goal of add2blog is to
 help you build some materials like wall paper for your blog website !
 
+
 ## Installation
 
 You can install the released version of add2blog from [Github](https://github.com/JiaxiangBU/add2blog) with:
@@ -37,21 +38,43 @@ library(add2blog)
 ## Usage
 
 ```{r}
-pn()
+library(tidyverse)
 ```
 
+### png2gif
 
 ```{r eval=F}
-add2blog::badge_download(
-  your_github_name = 'JiaxiangBU'
-    ,your_github_repo = 'add2prep'
-    ,type = 'total'
+png2gif(
+path = file.path('../','inst')
+,input_like = 'reprex'
+,output_name = 'reprex201811061210.gif'
 )
 ```
 
-  [![GitHub All Releases](https://img.shields.io/github/downloads/JiaxiangBU/add2blog/total.svg)](https://github.com/JiaxiangBU/add2blog)
+### digit_plot
 
+1. Extract the position and corresponding grey degree.
+1. The users give some digits which have corresponding grey degree.
+1. Put the digits (at the similar level of grey degree) into the position.
+
+```{r eval=F}
+library(add2blog)
+digit_plot(
+    digit_raw='lijiaxiang'
+    ,img_path=here::here('inst','pic','lijiaxiang.png')
+    ,resize = 0.15
+    ,bin = 0.4
+    ,digit_size = 4
+    ,alpha = 0.8
+)
+# ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
+```
+
+```{r echo=FALSE}
+knitr::include_graphics('https://github.com/JiaxiangBU/add2blog/raw/master/inst/pic/lijiaxiang_digit.png')
+```
 
 ## Example
 
 See the [vignettes](https://jiaxiangbu.github.io/add2blog/articles/).
+
