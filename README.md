@@ -29,12 +29,12 @@ library(add2blog)
 
 ``` r
 library(tidyverse)
-#> ─ Attaching packages ────────────────────────────────────── tidyverse 1.2.1 ─
+#> ─ Attaching packages ───────────────────────── tidyverse 1.2.1 ─
 #> ✔ ggplot2 3.1.0     ✔ purrr   0.2.5
 #> ✔ tibble  1.4.2     ✔ dplyr   0.7.8
 #> ✔ tidyr   0.8.2     ✔ stringr 1.3.1
 #> ✔ readr   1.1.1     ✔ forcats 0.3.0
-#> ─ Conflicts ──────────────────────────────────────── tidyverse_conflicts() ─
+#> ─ Conflicts ────────────────────────── tidyverse_conflicts() ─
 #> ✖ dplyr::filter() masks stats::filter()
 #> ✖ dplyr::lag()    masks stats::lag()
 ```
@@ -71,7 +71,7 @@ digit_plot(
 # ggsave(here::here('inst','pic','lijiaxiang_digit.png'))
 ```
 
-<img src="https://github.com/JiaxiangBU/add2blog/raw/master/inst/pic/lijiaxiang_digit.png" width="100%" />
+<img src="inst/pic/lijiaxiang_digit.png" width="100%" />
 
 ## Example
 

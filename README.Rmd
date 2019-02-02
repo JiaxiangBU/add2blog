@@ -71,7 +71,7 @@ digit_plot(
 ```
 
 ```{r echo=FALSE}
-knitr::include_graphics('https://github.com/JiaxiangBU/add2blog/raw/master/inst/pic/lijiaxiang_digit.png')
+knitr::include_graphics('inst/pic/lijiaxiang_digit.png')
 ```
 
 ## Example
