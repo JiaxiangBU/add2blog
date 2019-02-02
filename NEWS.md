@@ -2,6 +2,8 @@
 
 * Added the function `digit_plot` for building a digit plot.
 * Updated README.
+* Added new ignored files
+* Updated git ignored files
 
 # add2blog 0.1.6
 
