@@ -1,3 +1,5 @@
+* Removed packrat.
+
 # add2blog 0.1.7
 
 * Added the function `digit_plot` for building a digit plot.
